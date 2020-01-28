@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@animator/lift_on_touch"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="scrim,image_thumbnail" />
+
+            <ImageView
+                android:id="@+id/image_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_news"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:contentDescription="News image" />
+
+            <ImageView
+                android:id="@+id/scrim"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/scrim"
+                app:layout_constraintBottom_toBottomOf="@+id/image_thumbnail"
+                app:layout_constraintEnd_toEndOf="@+id/image_thumbnail"
+                app:layout_constraintStart_toStartOf="@+id/image_thumbnail"
+                app:layout_constraintTop_toTopOf="@+id/image_thumbnail" />
+
+            <ImageView
+                android:id="@+id/image_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bookmark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:contentDescription="Time for the news" />
+
+            <TextView
+                android:id="@+id/text_web_publication_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                tools:text="JAN 01 '20"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/image_bookmark"
+                app:layout_constraintStart_toStartOf="@+id/image_bookmark"
+                app:layout_constraintTop_toTopOf="@+id/image_bookmark" />
+
+            <TextView
+                android:id="@+id/text_web_publication_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="08:03 AM"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/text_web_publication_date"
+                app:layout_constraintStart_toStartOf="@+id/text_web_publication_date"
+                app:layout_constraintTop_toBottomOf="@+id/text_web_publication_date" />
+
+            <TextView
+                android:id="@+id/text_web_title"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                tools:text="Coronavirus: number infected hits 1,400 worldwide – live updates"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@+id/text_trail_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_bookmark"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/text_trail_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="3"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_thumbnail"
+                tools:text="More than 1,370 infected in China as officials try to stem spread of virus which has reached Europe, the US and Australia." />
+
+            <TextView
+                android:id="@+id/text_byline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_trail_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:maxLines="1"
+                tools:text="Nicola Slawson (now), Molly Blackall and Alison Rourke (earlier)"
+                android:textColor="@color/colorByline"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_trail_text" />
+
+            <TextView
+                android:id="@+id/text_section_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_trail_text"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:maxLines="1"
+                tools:text="Science"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+

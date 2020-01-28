@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="colorAccent">#BDBDBD</color>
+
+    <color name="colorTrailText">#BDBDBD</color>
+    <color name="colorByline">#FFCC00</color>
+    <color name="colorBackgroundPage">#7D7D7D</color>
+    <color name="colorBookmark">#326295</color>
+</resources>

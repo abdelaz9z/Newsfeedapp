@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:textColor="@color/colorPrimaryDark"
+        android:title="General">
+        <ListPreference
+            android:entries="@array/settings_topic_labels"
+            android:entryValues="@array/settings_topic_values"
+            android:key="@string/settings_topic_key"
+            android:title="@string/settings_topic_label" />
+
+        <ListPreference
+            android:entries="@array/settings_order_by_labels"
+            android:entryValues="@array/settings_order_by_values"
+            android:key="@string/settings_order_by_key"
+            android:title="@string/settings_order_by_label" />
+
+        <EditTextPreference
+            android:defaultValue="@string/settings_page_size_default"
+            android:inputType="numberSigned"
+            android:key="@string/settings_page_size_key"
+            android:selectAllOnFocus="true"
+            android:title="@string/settings_page_size_label" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:textColor="@color/colorPrimaryDark"
+        android:title="Metadata">
+        <!--        <CheckBoxPreference-->
+        <!--            android:defaultValue="@bool/pref_thumbnail_default"-->
+        <!--            android:key="@string/pref_thumbnail_key"-->
+        <!--            android:summary="%s"-->
+        <!--            android:summaryOff="@string/pref_thumbnail_summary_off"-->
+        <!--            android:summaryOn="@string/pref_thumbnail_summary_on"-->
+        <!--            android:title="Display Thumbnails" />-->
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

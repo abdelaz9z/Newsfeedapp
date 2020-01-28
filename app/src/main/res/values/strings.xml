@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">News feed app</string>
+
+    <string name="msg_no_news">No news found.</string>
+    <string name="msg_no_internet_connection">No internet connection.</string>
+
+    <string name="title_app_bar_search">Search</string>
+    <string name="title_app_bar_refresh">Refresh</string>
+    <string name="title_app_bar_settings">Settings</string>
+
+    <string name="title_settings">News Settings</string>
+
+    <string name="settings_order_by_newest_label">Newest</string>
+    <string name="settings_order_by_newest_value">newest</string>
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value">oldest</string>
+    <string name="settings_order_by_relevance_label">Relevance</string>
+    <string name="settings_order_by_relevance_value">relevance</string>
+
+
+    <string name="settings_api_key_key">api-key</string>
+    <string name="settings_api_key_default" translatable="false">2e6fae75-2f7b-48ee-a17a-c595fd2430bd</string>
+
+    <string name="settings_page_size_label">Page size</string>
+    <string name="settings_page_size_key">page-size</string>
+    <string name="settings_page_size_default" translatable="false">15</string>
+
+    <string name="settings_order_by_label">Order by</string>
+    <string name="settings_order_by_key">order-by</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
+
+    <string name="settings_show_fields_key">show-fields</string>
+    <string name="settings_show_fields_default" translatable="false">headline,trailText,shortUrl,thumbnail,byline</string>
+
+    <string name="settings_topic_label">Topic</string>
+    <string name="settings_topic_key">q</string>
+    <string name="settings_topic_default" translatable="false">good news</string>
+
+    <string name="settings_topic_good_news_label_and_value">Good News</string>
+    <string name="settings_topic_u_s_news_label_and_value">U.S. News</string>
+    <string name="settings_topic_world_news_label_and_value">World News</string>
+    <string name="settings_topic_sport_label_and_value">Sport</string>
+    <string name="settings_topic_business_label_and_value">Business</string>
+    <string name="settings_topic_technology_label_and_value">Technology</string>
+    <string name="settings_topic_art_and_design_label_and_value"><![CDATA[Art & Design]]></string>
+    <string name="settings_topic_culture_label_and_value">Culture</string>
+    <string name="settings_topic_education_label_and_value">Education</string>
+    <string name="settings_topic_environment_label_and_value">Environment</string>
+    <string name="settings_topic_film_label_and_value">Film</string>
+    <string name="settings_topic_life_and_style_label_and_value"><![CDATA[Life & Style]]></string>
+    <string name="settings_topic_music_label_and_value">Music</string>
+    <string name="settings_topic_science_label_and_value">Science</string>
+    <string name="settings_topic_travel_label_and_value">Travel</string>
+    <string name="settings_topic_sport_fishing_label_and_value">Sport fishing</string>
+    <string name="settings_topic_fishing_label_and_value">Fishing</string>
+
+</resources>
