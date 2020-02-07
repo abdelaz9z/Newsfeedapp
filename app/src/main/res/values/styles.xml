@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Settings Preferences Text Style -->
+    <style name="SettingsFragmentTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/colorBackgroundPage</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorByline</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <!--        <item name="android:fontFamily">@font/ubuntu</item>-->
+        <!--        <item name="android:textSize">@dimen/text_size_m</item>-->
+        <!-- Dialog Styles -->
+        <item name="android:dialogTheme">@style/DialogStyle</item>
+        <item name="android:alertDialogTheme">@style/DialogStyle</item>
+    </style>
+    <!-- Settings Dialog Styles -->
+    <style name="DialogStyle" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="android:background">@color/colorBackgroundPage</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!--        <item name="android:textSize">@dimen/text_size_m</item>-->
+    </style>
+
 </resources>
