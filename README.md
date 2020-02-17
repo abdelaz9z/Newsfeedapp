@@ -6,5 +6,3 @@ News feed app which gives a user regularly-updated news from the internet relate
 
 [![Watch the video](https://github.com/abdelaz9z/Newsfeedapp/blob/master/background%20news%20feed%20app.jfif)](https://youtu.be/dOyUGQdCJM0)
 
-[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
-
